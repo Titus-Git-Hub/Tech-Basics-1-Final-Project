@@ -7,4 +7,4 @@ This repository will guide you through the process of creating my final Python p
 
 If you'd like to follow the development process or reuse parts of it, feel free to browse through my upcoming uploads.👨‍💻👩‍💻
 
-![Pac-Man image](Pac-Man-Logo.jpg)
+![Pac-Man image](media/Pac-Man-Logo.jpg)
