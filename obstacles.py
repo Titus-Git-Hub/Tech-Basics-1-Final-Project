@@ -1,7 +1,7 @@
 import pygame
 
-GREY = (170, 170, 170)
-RED = (200, 50, 50)
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
 
 pygame.init()
 SCREEN_WIDTH, SCREEN_HEIGHT = 800, 800
@@ -17,58 +17,107 @@ obstacles = [
     pygame.Rect(50, 750, 700, 25),
 
     #HORIZONTAL
-    #pygame.Rect(60, 400, 680, 25),
+    #pygame.Rect(60, 395, 680, 300),
     #VERTIKAL
-    #pygame.Rect(400, 110, 25, 630),
+    #pygame.Rect(385, 110, 30, 630),
     #ALLES FULL
     #pygame.Rect(50, 100, 700, 650),
 
-    pygame.Rect(360, 400, 100, 25),
-    pygame.Rect(360, 350, 25, 50),
-    pygame.Rect(435, 350, 25, 50),
 
-    pygame.Rect(400, 225, 25, 90),
-    pygame.Rect(340, 225, 140, 25),
+    # 1,2,3,4,5
+    pygame.Rect(345, 400, 110, 30),
+    pygame.Rect(345, 390, 30, 10),
+    pygame.Rect(425, 390, 30, 10),
+    #pygame.Rect(300, 350, 60, 30),
+    #pygame.Rect(435, 350, 80, 30),
 
-    pygame.Rect(230, 225, 25, 140),
-    pygame.Rect(555, 225, 25, 140),
-    pygame.Rect(255, 280, 100, 25),
-    pygame.Rect(460, 280, 100, 25),
+    # 6,7
+    pygame.Rect(385, 230, 30, 90),
+    pygame.Rect(340, 230, 120, 30),
 
-    pygame.Rect(400, 100, 25, 80),
+    # 8,9,10,11
+    pygame.Rect(260, 230, 30, 160),
+    pygame.Rect(510, 230, 30, 160),
+    pygame.Rect(260, 310, 80, 30),
+    pygame.Rect(465, 310, 75, 30),
 
-    pygame.Rect(360, 625, 100, 125),
+    # 12
+    pygame.Rect(385, 100, 30, 80),
 
-    pygame.Rect(400, 475, 25, 90),
+    # 13
+    pygame.Rect(345, 640, 110, 115),
 
-    pygame.Rect(320, 475, 25, 90),
-    pygame.Rect(270, 540, 50, 25),
-    pygame.Rect(270, 565, 25, 60),
+    # 14
+    pygame.Rect(345, 480, 110, 90),
 
-    pygame.Rect(230, 410, 25, 60),
-    pygame.Rect(190, 445, 40, 25),
+    # 15,16,17
+    #.Rect(260, 475, 25, 90),
+    #pygame.Rect(210, 540, 50, 25),
+    #pygame.Rect(210, 565, 25, 60),
 
-    pygame.Rect(130, 360, 60, 25),
-    pygame.Rect(130, 410, 25, 60),
+    # 18,19
+    pygame.Rect(260, 450, 30, 60),
+    pygame.Rect(180, 480, 80, 30),
 
+    # 20,21
+    pygame.Rect(100, 400, 110, 30),
+    pygame.Rect(100, 430, 30, 200),
 
-    pygame.Rect(480, 475, 25, 90),
-    pygame.Rect(500, 540, 50, 25),
-    pygame.Rect(525, 565, 25, 60),
+    # 22,23,24
+    #pygame.Rect(480, 475, 25, 90),
+    #pygame.Rect(500, 540, 50, 25),
+    #pygame.Rect(525, 565, 25, 60),
 
-    pygame.Rect(555, 410, 25, 60),
-    pygame.Rect(580, 445, 40, 25),
+    # 25,26
+    pygame.Rect(510, 450, 30, 60),
+    pygame.Rect(540, 480, 80, 30),
 
-    pygame.Rect(620, 360, 60, 25),
-    pygame.Rect(655, 410, 25, 60),
+    # 27,28
+    pygame.Rect(590, 400, 110, 30),
+    pygame.Rect(670, 410, 30, 220),
+
+    # 29,30
+    pygame.Rect(100, 630, 120, 70),
+    pygame.Rect(600, 630, 100, 70),
+
+    # 31,32
+    pygame.Rect(260, 150, 75, 30),
+    pygame.Rect(465, 150, 75, 30),
+
+    # 33,34
+    pygame.Rect(100, 150, 110, 30),
+    pygame.Rect(590, 150, 100, 30),
+
+    # 35,36
+    pygame.Rect(100, 150, 30, 200),
+    pygame.Rect(670, 150, 30, 200),
+
+    # 37,38
+    pygame.Rect(180, 230, 30, 120),
+    pygame.Rect(590, 230, 30, 120),
+
+    # 39,40
+    pygame.Rect(180, 510, 30, 60),
+    pygame.Rect(590, 510, 30, 60),
+
+    # 41,42
+    #pygame.Rect(100, 590, 80, 110),
+    #pygame.Rect(640, 590, 60, 110),
+
+    # 43,44
+    pygame.Rect(270, 560, 30, 140),
+    pygame.Rect(505, 560, 30, 140),
+
+    pygame.Rect(345, 630, 30, 10),
+    pygame.Rect(425, 630, 30, 10),
 ]
 
 running = True
 while running:
-    screen.fill(GREY)
+    screen.fill(WHITE)
 
     for obs in obstacles:
-        pygame.draw.rect(screen, RED, obs)
+        pygame.draw.rect(screen, BLACK, obs)
 
     pygame.display.update()
 
