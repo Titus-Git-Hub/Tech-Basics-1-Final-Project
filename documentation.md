@@ -6,7 +6,7 @@ I took inspiration from the well-known game Pac-Man.
 With the knowledge I had gained in class, I was able to implement the barriers. At the beginning, I determined the size of the game window 
 and did the necessary calculations. A sketch of the field that I had prepared beforehand helped me a lot - not only to set a clear goal from the start 
 but also as a reference during development, allowing me to assign and adjust barriers more easily.
-Since at the beginning I still wanted to design my game in the style of Pac-Man, my first sketch was a little different from the final project...
+Since at the beginning I still wanted to design my game in the style of Pac-Man, my first sketch was a little different from the final result...
 
 In fact, it also wasn’t originally planned that some of the gaps would be smaller than others, making it harder to get through, but I saw it as 
 a good challenge to keep this feature in the game.
